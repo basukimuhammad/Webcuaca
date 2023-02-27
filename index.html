@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ngatur Font dengan TEMBAK LANGSUNG -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Konekin ke CSS -->
+    <link rel="stylesheet" href="src/style/style.css">
+    <title>Cuaca</title>
+</head>
+
+<body>
+
+    <div class="container"id="utama">
+        <!-- Pencarian Lokasi -->
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Lokasi Anda">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+        <!-- End -->
+
+
+        <!-- Jika Lokasi Tidak Ditemukan -->
+        <div class="not-found">
+            <img src="src/image/404.png">
+            <p>Ups, Lokasi Tidak Ditemukan T_T</p>
+            <p><a href="#utama">Coba Lagi</a></p>
+        </div>
+        <!-- Jika Lokasi Tidak Ditemukan End -->
+
+        <!-- Jika Lokasi ditemukan -->
+        <div class="weather-box">
+            <img src="" alt="graphic">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+        <!-- Lokasi End -->
+
+        <!-- Weather Details Start -->
+        <div class="weather-details">
+            <!-- Komponen 1 -->
+            <div class="humidity">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Kelembapan</p>
+                </div>
+            </div>
+            <!-- Komponen 1 End -->
+
+            <!-- Komponen 2 -->
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Angin</p>
+                </div>
+            </div>
+            <!-- Komponen 2 End -->
+
+            <!-- Komponen 3 -->
+            <div class="visibility">
+                <i class="fa-solid fa-eye"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Visibilitas</p>
+                </div>
+            </div>
+            <!-- Komponen 3 End -->
+
+            <!-- Komponen 4 -->
+            <div class="timezone">
+                <i class="fa-solid fa-clock"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Zona Waktu</p>
+                </div>
+            </div>
+            <!-- Komponen 4 End -->
+        </div>
+        <!-- Weather Detail End -->
+    </div>
+    <!-- Kelas Container End -->
+
+    <!-- Untuk Memunculkan Icon yang ada di <i> -->
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <!-- Penjelasan fontawesome end -->
+
+    <!-- Konekin ke Javascript -->
+    <script src="index.js"></script>
+    <!-- Koneksi End -->
+</body>
+
+</html>
