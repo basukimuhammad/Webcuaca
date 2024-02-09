@@ -1,4 +1,4 @@
-# CWebsite Prakiraan Cuaca
+# Website Prakiraan Cuaca
 Project Usil Berasal Dari Youtube
 
 ## Shoutout to original Creator:
